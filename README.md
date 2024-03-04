@@ -4,7 +4,6 @@ Este proyecto ofrece una guía completa para configurar y utilizar Frida y Magis
 
 ## Tabla de Contenidos
 - [Introducción](#introducción)
-- [Frida y Magisk](#frida-y-magisk)
 - [Requisitos Previos](#requisitos-previos)
 - [Instalación](#instalación)
   - [Instalar ADB](#instalar-adb)
