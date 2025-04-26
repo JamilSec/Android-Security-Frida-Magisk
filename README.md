@@ -103,7 +103,7 @@ Para comenzar con las pruebas de seguridad:
 
 Si te encuentras con el error `Failed to spawn: unexpectedly timed out while waiting for signal from process with PID`, no te preocupes, es un problema común relacionado con las configuraciones del dispositivo o incompatibilidades de versión. A continuación, te explicamos cómo solucionarlo paso a paso:
 
-![Error de Frida](https://i.ibb.co/sPykkCX/Error.png)
+![Error de Frida](https://github.com/JamilSec/Android-Security-Frida-Magisk/blob/main/images/Error.png)
 
 Este problema puede surgir por diversos motivos, incluyendo la ejecución simultánea de múltiples instancias de Frida-Server o configuraciones restrictivas en tu dispositivo. Para solucionarlo, sigue estos pasos:
 
@@ -154,7 +154,7 @@ En conclusión, la interacción entre Frida y estas características de segurida
 
 En esta sección, se incluyen imágenes y pruebas de las herramientas en acción para demostrar su eficacia en entornos reales. Estas evidencias ayudan a validar la utilidad y el impacto de Frida y Magisk en la seguridad de aplicaciones Android.
 
-![Ejemplo de Inyección de Código](https://i.ibb.co/rp3W0qf/SUCCESS.jpg)
+![Ejemplo de Inyección de Código](https://github.com/JamilSec/Android-Security-Frida-Magisk/blob/main/images/Success.jpg)
 
 *Resolver el problema relacionado con el error `Failed to spawn: unexpectedly timed out while waiting for signal from process with PID` ha sido un logro muy gratificante. Por ello, comparto con entusiasmo esta imagen que evidencia la solución documentada, con la esperanza de que sea de utilidad para todos los apasionados de la informática.*
 
