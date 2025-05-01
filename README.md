@@ -151,6 +151,8 @@ En conclusión, la interacción entre Frida y estas características de segurida
 
 ### Error al ejecutar el servidor de Frida
 
+Si te encuentras con el error `Error: Unable to perform state transition; please file a bug`, no te preocupes, aca esta la solucion.
+
 ![Error Server Frida](https://github.com/JamilSec/Android-Security-Frida-Magisk/blob/main/images/Frida-error-ART.png)
 
 En las versiones recientes de Android, el runtime ART bloquea ciertos hooks de Frida y provoca este mensaje en frida-java-bridge:
