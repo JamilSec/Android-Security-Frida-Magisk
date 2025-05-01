@@ -25,11 +25,11 @@ Este documento es una guía detallada para configurar y utilizar las herramienta
 Para seguir esta guía, es necesario contar con un dispositivo Android rooteado con Magisk. A continuación, se detallan las especificaciones del equipo utilizado para las pruebas:
 
 - **Dispositivo Android rooteado con Magisk:**
-  - **Versión de Magisk:** 27.0 (27000)
-  - **Dispositivo:** Samsung SM-A325M
+  - **Versión de Magisk:** v28.1 (28104)
+  - **Dispositivo:** Xiaomi Redmi Note 8 (2021) - M1908C3JGG
   - **Arquitectura:** arm64-v8a
-  - **Versión de Android:** 11
-  - **Nivel API:** 30
+  - **Versión de Android:** 13
+  - **Nivel API:** 33
 
 ## Instalación
 
@@ -149,7 +149,20 @@ Estas capas de seguridad y gestión de procesos pueden dificultar la instrumenta
 
 En conclusión, la interacción entre Frida y estas características de seguridad de Android requiere un manejo cuidadoso y un enfoque informado para superar los desafíos presentados por el sistema operativo. -->
 
+### Error al ejecutar el servidor de Frida
 
+![Error Server Frida](https://github.com/JamilSec/Android-Security-Frida-Magisk/blob/main/images/Frida-error-ART.png)
+
+En las versiones recientes de Android, el runtime ART bloquea ciertos hooks de Frida y provoca este mensaje en frida-java-bridge:
+
+**Causa:** el paquete `com.google.android.art` impide que Frida modifique la VM de Java.
+
+**Solución rápida:** desinstalar dicho paquete antes de arrancar Frida:
+
+```bash
+adb shell pm uninstall com.google.android.art
+```
+---
 ## Evidencias de Funcionamiento
 
 En esta sección, se incluyen imágenes y pruebas de las herramientas en acción para demostrar su eficacia en entornos reales. Estas evidencias ayudan a validar la utilidad y el impacto de Frida y Magisk en la seguridad de aplicaciones Android.
